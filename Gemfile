@@ -4,10 +4,12 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.1'
 
 group :development do
-  gem 'sqlite3', '1.3.8'
   gem 'rspec-rails', '2.13.1'
   gem 'spring'
 end
+
+gem 'pg'
+gem 'rails_12factor'
 
 group :test do
   gem 'minitest'
@@ -24,10 +26,6 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
-group :production do
-  gem 'pg'
-  gem 'rails_12factor'
-end
 
 
 
