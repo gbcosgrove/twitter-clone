@@ -10,6 +10,10 @@ end
 
 gem 'pg'
 
+group :development, :test do
+  gem 'guard-rspec', '2.5.0'
+end
+
 
 group :test do
   gem 'minitest'
